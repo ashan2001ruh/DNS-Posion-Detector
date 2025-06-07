@@ -1,2 +1,5 @@
 scapy
 reportlab
+pyYAML
+setuptools
+

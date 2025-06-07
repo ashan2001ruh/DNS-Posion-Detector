@@ -1,0 +1,29 @@
+# DNS Poisoning Detector Configuration
+
+# Duration to monitor DNS traffic (in seconds)
+monitoring_duration: 60
+
+# Number of different IPs required to flag a domain as suspicious
+suspicious_ip_threshold: 3
+
+# Filename for the PDF report; leave empty to use a timestamp-based default
+report_filename: ""
+
+# Specific DNS server to filter and monitor; leave empty to monitor all DNS traffic
+dns_server: ""
+
+# List of DNS servers considered trusted; responses from these will not be flagged
+trusted_dns_servers:
+  - "8.8.8.8"
+  - "1.1.1.1"
+
+# Enable or disable logging of events
+enable_logging: true
+
+# Path to the log file (relative to the project root)
+log_file: "dns_poisoning_detector.log"
+
+# Logging level: choose from DEBUG, INFO, WARNING, ERROR, or CRITICAL
+log_level: "INFO"
+
+
